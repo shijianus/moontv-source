@@ -371,6 +371,38 @@
       "name": "葡萄资源",
       "detail": "https://api.putaozy.net",
       "is_adult": true
+    },
+    "feimao": {
+      "api": "http://xn--r09h.xn--2o2b21q31mba8939n2ifq7q.com/tv",
+      "name": "肥猫福利",
+      "detail": "http://xn--r09h.xn--2o2b21q31mba8939n2ifq7q.com",
+      "is_adult": true
+    },
+    "fuli": {
+      "api": "http://ob4.cn/thfx",
+      "name": "福利仓库",
+      "detail": "http://ob4.cn",
+      "is_adult": true
+    },
+    "feimao2": {
+      "api": "http://我不是.肥猫.live/接口禁止贩卖",
+      "name": "肥猫2",
+      "detail": "http://我不是.肥猫.live",
+      "is_adult": true
     }
+  },
+  "tvbox_config": {
+    "live": [
+      {
+        "api": "https://raw.bgithub.xyz/wwb521/live/refs/heads/main/tv.m3u",
+        "name": "成人版 M3U 直播源",
+        "detail": "https://github.com/wwb521/live"
+      },
+      {
+        "api": "https://raw.bgithub.xyz/wwb521/live/refs/heads/main/video.json",
+        "name": "成人版 JSON 直播源",
+        "detail": "https://github.com/wwb521/live"
+      }
+    ]
   }
 }
