@@ -5,4 +5,4 @@ To make it easier for you to subscribe to the video or live stream sources you n
 
 - Complete subscription content : [config-all.json](https://raw.githubusercontent.com/shijianus/moontv-source/refs/heads/main/config.json)
 - Adult content in a separate volume : [config-adults](https://raw.githubusercontent.com/shijianus/moontv-source/refs/heads/main/config-adults.json)
-- The viewing source in a separate volume : [config-films]()
+- The viewing source in a separate volume : [config-films](https://raw.githubusercontent.com/shijianus/moontv-source/refs/heads/main/config-films.json)
