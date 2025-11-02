@@ -474,6 +474,114 @@
       "name": "iKun资源",
       "detail": "https://ikunzyapi.com",
       "is_adult": false
+    },
+    "caoliu": {
+      "api": "https://www.caoliuzyw.com/api.php/provide/vod/at/json",
+      "name": "草榴资源",
+      "detail": "https://caoliuzyw.com",
+      "is_adult": true
+    },
+    "mao": {
+      "api": "https://api.maozyapi.com/inc/apijson_vod.php",
+      "name": "猫资源",
+      "detail": "https://maozyapi.com",
+      "is_adult": true
+    },
+    "sewo": {
+      "api": "https://sewozyapi.com/api.php/provide/vod",
+      "name": "色窝资源",
+      "detail": "https://sewozyapi.com",
+      "is_adult": true
+    },
+    "yinwo": {
+      "api": "https://api.yinwoapi.com/api.php/provide/vod",
+      "name": "淫窝资源",
+      "detail": "https://yinwoapi.com",
+      "is_adult": true
+    },
+    "putao": {
+      "api": "https://api.putaozy.net/inc/apijson_vod.php",
+      "name": "葡萄资源",
+      "detail": "https://putaozy.net",
+      "is_adult": true
+    },
+    "lyzy": {
+      "api": "https://api.apilyzy.com/api.php/provide/vod",
+      "name": "丽资源",
+      "detail": "https://apilyzy.com",
+      "is_adult": true
+    },
+    "kdapi": {
+      "api": "http://api.kdapi.info/api.php/provide/vod",
+      "name": "KD资源",
+      "detail": "http://kdapi.info",
+      "is_adult": true
+    },
+    "feifei": {
+      "api": "http://www.feifei67.com/api.php/provide/vod",
+      "name": "飞飞资源",
+      "detail": "http://feifei67.com",
+      "is_adult": true
+    },
+    "jiali": {
+      "api": "http://www.jializyzapi.com/api.php/provide/vod",
+      "name": "佳丽资源",
+      "detail": "http://jializyzapi.com",
+      "is_adult": true
+    },
+    "naicha": {
+      "api": "https://caiji.naichaapi.com/inc/apijson_vod.php",
+      "name": "奶茶资源",
+      "detail": "https://naichaapi.com",
+      "is_adult": true
+    },
+    "abzy": {
+      "api": "https://cj.apiabzy.com/api.php/provide/vod",
+      "name": "爱播资源",
+      "detail": "https://apiabzy.com",
+      "is_adult": true
+    },
+    "subo18": {
+      "api": "https://subocaiji.com/api.php/provide/vod/from/subyun/at/json",
+      "name": "速播成人",
+      "detail": "https://subocaiji.com",
+      "is_adult": true
+    },
+    "shabi": {
+      "api": "http://www.shabizy.com:777/inc/sea",
+      "name": "傻逼资源",
+      "detail": "http://shabizy.com",
+      "is_adult": true
+    },
+    "gczy": {
+      "api": "https://gczyapi.com/home/cjapi/kld2/mc10/vod/xml",
+      "name": "GC资源",
+      "detail": "https://gczyapi.com",
+      "is_adult": true
+    },
+    "xx55": {
+      "api": "https://xx55zyapi.com/home/cjapi/ascf/mc10/vod/xml",
+      "name": "XX55资源",
+      "detail": "https://xx55zyapi.com",
+      "is_adult": true
+    },
+    "dammei": {
+      "api": "https://www.dammei.com/api/xml.php",
+      "name": "大妹资源",
+      "detail": "https://dammei.com",
+      "is_adult": true
+    },
+    "xrbsp": {
+      "api": "https://www.xrbsp.com/api/xml.php",
+      "name": "XR资源",
+      "detail": "https://xrbsp.com",
+      "is_adult": true
+    },
+    "gdlsp": {
+      "api": "https://www.gdlsp.com/api/xml.php",
+      "name": "GD资源",
+      "detail": "https://gdlsp.com",
+      "is_adult": true
     }
   },
   "custom_category": [
