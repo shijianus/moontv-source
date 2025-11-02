@@ -220,6 +220,81 @@
       "api": "https://ikunzyapi.com/api.php/provide/vod",
       "name": "iKun资源",
       "detail": "https://ikunzyapi.com"
+    },
+    "aniwatch": {
+      "api": "https://api-anime-rouge.vercel.app/aniwatch/anime",
+      "name": "AniWatch 动漫",
+      "detail": "https://api-anime-rouge.vercel.app"
+    },
+    "aniwatch_episodes": {
+      "api": "https://api-anime-rouge.vercel.app/aniwatch/episodes",
+      "name": "AniWatch 剧集",
+      "detail": "https://api-anime-rouge.vercel.app"
+    },
+    "aniwatch_src": {
+      "api": "https://api-anime-rouge.vercel.app/aniwatch/episode-srcs",
+      "name": "AniWatch 来源",
+      "detail": "https://api-anime-rouge.vercel.app"
+    },
+    "gogoanime": {
+      "api": "https://api-anime-rouge.vercel.app/gogoanime/anime",
+      "name": "GoGoAnime 动漫",
+      "detail": "https://api-anime-rouge.vercel.app"
+    },
+    "gogoanime_search": {
+      "api": "https://api-anime-rouge.vercel.app/gogoanime/search",
+      "name": "GoGoAnime 搜索",
+      "detail": "https://api-anime-rouge.vercel.app"
+    },
+    "gogoanime_recent": {
+      "api": "https://api-anime-rouge.vercel.app/gogoanime/recent-releases",
+      "name": "GoGoAnime 最近发布",
+      "detail": "https://api-anime-rouge.vercel.app"
+    },
+    "gogoanime_popular": {
+      "api": "https://api-anime-rouge.vercel.app/gogoanime/popular",
+      "name": "GoGoAnime 流行",
+      "detail": "https://api-anime-rouge.vercel.app"
+    },
+    "gogoanime_movies": {
+      "api": "https://api-anime-rouge.vercel.app/gogoanime/anime-movies",
+      "name": "GoGoAnime 电影",
+      "detail": "https://api-anime-rouge.vercel.app"
+    },
+    "crunchyroll": {
+      "api": "https://www.crunchyroll.com/api/vod",
+      "name": "Crunchyroll 动漫",
+      "detail": "https://www.crunchyroll.com"
+    },
+    "9anime": {
+      "api": "https://9anime.to/api/vod",
+      "name": "9Anime 动漫",
+      "detail": "https://9anime.to"
+    },
+    "animeheaven": {
+      "api": "https://animeheaven.ru/api/vod",
+      "name": "AnimeHeaven",
+      "detail": "https://animeheaven.ru"
+    },
+    "animeplanet": {
+      "api": "https://www.anime-planet.com/api/vod",
+      "name": "AnimePlanet",
+      "detail": "https://www.anime-planet.com"
+    },
+    "4anime": {
+      "api": "https://4anime.to/api/vod",
+      "name": "4Anime",
+      "detail": "https://4anime.to"
+    },
+    "animefreak": {
+      "api": "https://www.animefreak.tv/api/vod",
+      "name": "AnimeFreak",
+      "detail": "https://www.animefreak.tv"
+    },
+    "hianime": {
+      "api": "https://hianime.to/api/vod",
+      "name": "HiAnime",
+      "detail": "https://hianime.to"
     }
   },
   "custom_category": [
@@ -237,6 +312,11 @@
       "name": "日韩",
       "type": "movie",
       "query": "日韩"
+    },
+    {
+      "name": "动漫",
+      "type": "anime",
+      "query": "动漫"
     }
   ],
   "tvbox_config": {
@@ -360,6 +440,106 @@
         "api": "https://raw.githubusercontent.com/uzbox/iptv-m3u/main/china.m3u",
         "name": "UzBox China IPTV",
         "detail": "https://uzbox.com"
+      },
+      {
+        "api": "https://apsattv.com/ssungusa.m3u",
+        "name": "Samsung TV Plus",
+        "detail": "https://apsattv.com"
+      },
+      {
+        "api": "https://tvpass.org/playlist/m3u",
+        "name": "TheTVApp",
+        "detail": "https://tvpass.org"
+      },
+      {
+        "api": "https://www.apsattv.com/xumo.m3u",
+        "name": "XUMO",
+        "detail": "https://apsattv.com"
+      },
+      {
+        "api": "https://www.apsattv.com/localnow.m3u",
+        "name": "Local Now",
+        "detail": "https://apsattv.com"
+      },
+      {
+        "api": "https://www.apsattv.com/lg.m3u",
+        "name": "LG Channels",
+        "detail": "https://apsattv.com"
+      },
+      {
+        "api": "https://www.apsattv.com/rok.m3u",
+        "name": "The Roku Channel",
+        "detail": "https://apsattv.com"
+      },
+      {
+        "api": "https://www.apsattv.com/redbox.m3u",
+        "name": "Redbox TV",
+        "detail": "https://apsattv.com"
+      },
+      {
+        "api": "https://www.apsattv.com/distro.m3u",
+        "name": "DistroTV",
+        "detail": "https://apsattv.com"
+      },
+      {
+        "api": "https://www.apsattv.com/xiaomi.m3u",
+        "name": "Xiaomi",
+        "detail": "https://apsattv.com"
+      },
+      {
+        "api": "https://iptv-org.github.io/iptv/categories/entertainment.m3u",
+        "name": "娱乐频道",
+        "detail": "https://iptv-org.github.io"
+      },
+      {
+        "api": "https://iptv-org.github.io/iptv/categories/movies.m3u",
+        "name": "电影频道",
+        "detail": "https://iptv-org.github.io"
+      },
+      {
+        "api": "https://iptv-org.github.io/iptv/categories/news.m3u",
+        "name": "新闻频道",
+        "detail": "https://iptv-org.github.io"
+      },
+      {
+        "api": "https://iptv-org.github.io/iptv/categories/sports.m3u",
+        "name": "体育频道",
+        "detail": "https://iptv-org.github.io"
+      },
+      {
+        "api": "https://iptv-org.github.io/iptv/categories/documentary.m3u",
+        "name": "纪录片频道",
+        "detail": "https://iptv-org.github.io"
+      },
+      {
+        "api": "https://iptv-org.github.io/iptv/categories/music.m3u",
+        "name": "音乐频道",
+        "detail": "https://iptv-org.github.io"
+      },
+      {
+        "api": "https://iptv-org.github.io/iptv/countries/us.m3u",
+        "name": "美国频道",
+        "detail": "https://iptv-org.github.io"
+      },
+      {
+        "api": "https://iptv-org.github.io/iptv/countries/uk.m3u",
+        "name": "英国频道",
+        "detail": "https://iptv-org.github.io"
+      },
+      {
+        "api": "https://iptv-org.github.io/iptv/countries/ca.m3u",
+        "name": "加拿大频道",
+        "detail": "https://iptv-org.github.io"
+      },
+      {
+        "api": "https://iptv-org.github.io/iptv/countries/au.m3u",
+        "name": "澳大利亚频道",
+        "detail": "https://iptv-org.github.io"
+      },
+      {
+        "api": "https://iptv-org.github.io/iptv/countries/vn.m3u",
+        "name": "越南频道",
+        "detail": "https://iptv-org.github.io"
       }
     ]
   }
