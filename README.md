@@ -47,10 +47,6 @@ https://raw.githubusercontent.com/shijianus/moontv-source/main/檔案名
 ```
 https://cdn.jsdelivr.net/gh/shijianus/moontv-source@main/檔案名
 ```
-例如：
-```
-https://cdn.jsdelivr.net/gh/shijianus/moontv-source@main/config-anime.json
-```
 
 ### 4. Docker 掛載範例（可選）
 ```bash
@@ -61,12 +57,45 @@ docker run -d \
   ghcr.io/senshinya/moontv:latest
 ```
 
+## 🤝 歡迎貢獻！一起維護更好的資源庫
+
+本倉庫採開放維護方式，**非常歡迎大家一起更新內容**！  
+無論是回報失效源、推薦新源，或直接提交 Pull Request，都非常感謝。
+
+### 貢獻方式
+
+1. **回報失效源**
+   - 直接開 Issue，標題建議寫：`[失效] 檔案名 - 源名稱`
+   - 請附上失效的 api 地址，方便快速確認。
+
+2. **推薦新源**
+   - 開 Issue 或直接提 PR
+   - 必須符合以下條件：
+     - 免費可直接使用
+     - 接口格式為 Apple CMS V10（`/api.php/provide/vod`）
+     - 非成人內容請勿提交到 `config-adults.json` 以外的檔案
+     - 請提供可驗證的 api 地址與簡單說明
+
+3. **直接提交 Pull Request**
+   - Fork 本倉庫 → 修改對應分類檔案 → 提交 PR
+   - 請盡量保持每個分類檔案源數量在 **30~50 個** 之間
+   - 新增源時建議放在檔案後方（作為備用）
+   - 提交前請先簡單測試源是否可用
+
+### 貢獻注意事項
+
+- 成人內容**只能**提交到 `config-adults.json`
+- 請勿提交需要密碼、付費或有明顯廣告劫持的源
+- 直播源請優先使用更新積極的公共倉庫（如 iptv-org、fanmingming 等）
+- 提交時請簡單說明修改內容，方便審核
+
+感謝每一位幫忙維護的貢獻者！讓我們一起把這個資源庫維護得更好。
+
 ## 🛠️ 維護說明
 
-- 所有配置均為**公開免費源**，定期更新與清理失效接口。
+- 所有配置均為公開免費源，定期更新與清理失效接口。
 - 成人內容已完全獨立至 `config-adults.json`，與其他檔案分離。
 - 更新後請手動在客戶端點擊「更新配置」或重啟應用以刷新緩存。
-- 歡迎提交 Issue 回報失效源或建議新增資源。
 
 ## ⚠️ 免責聲明
 
