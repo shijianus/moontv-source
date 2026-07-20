@@ -1,64 +1,82 @@
 # MoonTV Source (影視源配置庫)
 
-本倉庫用於託管 MoonTV (LunaTV) 及兼容客戶端的配置數據源。包含影視接口配置、直播源列表及站點自定義設置。
+本倉庫專門為 **MoonTV / LunaTV** 及兼容客戶端提供配置數據源。  
+為減少一次載入過多資源造成的檢索負擔，現已改為**分類專用配置檔**，方便用戶按需求選擇。
 
-通過引用本倉庫的 Raw 文件鏈接，可以實現 MoonTV 的快速配置與雲端更新。
+## 📂 目前文件結構
 
-## 📂 文件結構說明
+| 文件名                  | 說明                                   | 建議用途                     |
+|-------------------------|----------------------------------------|------------------------------|
+| `config.json`           | 綜合通用配置（可選）                   | 一般使用                     |
+| `config-films.json`     | 電影 + 劇集 + 直播頻道                 | 影音綜合                     |
+| `config-anime.json`     | 動漫專用（日漫 + 國漫為主）            | 動漫用戶                     |
+| `config-movie.json`     | 電影專用                               | 只看電影                     |
+| `config-tv.json`        | 劇集專用（國產/韓/日/美劇）            | 追劇用戶                     |
+| `config-variety.json`   | 綜藝專用                               | 綜藝粉絲                     |
+| `config-doc.json`       | 紀錄片專用                             | 紀錄片                       |
+| `config-live.json`      | 直播頻道專用（IPTV）                   | 電視直播                     |
+| `config-adults.json`    | 成人內容專用（獨立分離）               | 成人模式                     |
 
-| 文件名 | 說明 | 格式 |
-| :--- | :--- | :--- |
-| `config.json` | **核心配置文件** (站點設置、接口列表、解析源等) | JSON |
-| `live.m3u` / `live.txt` | 直播源列表 (IPTV) | M3U / TXT |
-| `custom_spider.jar` | 自定義爬蟲源 (如需要) | JAR |
-| `wallpaper.json` | 壁紙/背景圖配置 | JSON |
-
+> 每個分類檔案約控制在 **30~50 個有效源**，避免過度檢索。
 
 ## 🚀 使用方法
 
-### 1. 獲取引用鏈接
-為了讓 MoonTV 客戶端讀取配置，您需要使用文件的 **Raw (原始數據)** 鏈接。
-GitHub 的原始鏈接格式通常為：
-`https://raw.githubusercontent.com/shijianus/moontv-source/main/文件名`
+### 1. 取得 Raw 連結
+GitHub Raw 格式：
+```
+https://raw.githubusercontent.com/shijianus/moontv-source/main/檔案名
+```
 
+**常用範例：**
+- 動漫專用：`https://raw.githubusercontent.com/shijianus/moontv-source/main/config-anime.json`
+- 電影專用：`https://raw.githubusercontent.com/shijianus/moontv-source/main/config-movie.json`
+- 劇集專用：`https://raw.githubusercontent.com/shijianus/moontv-source/main/config-tv.json`
+- 直播頻道：`https://raw.githubusercontent.com/shijianus/moontv-source/main/config-live.json`
+- 成人專用：`https://raw.githubusercontent.com/shijianus/moontv-source/main/config-adults.json`
+- 綜合影音：`https://raw.githubusercontent.com/shijianus/moontv-source/main/config-films.json`
+
+### 2. 在 MoonTV / LunaTV 中配置
+1. 打開客戶端 → **設置 (Settings)** → **配置源 (Source)**
+2. 將對應的 Raw 連結貼到「配置地址」
+3. 點擊確認 / 更新配置
+
+可同時添加多個分類配置，或依需求切換使用。
+
+### 3. 國內加速（推薦）
+如果 GitHub Raw 存取較慢，可使用 jsDelivr：
+```
+https://cdn.jsdelivr.net/gh/shijianus/moontv-source@main/檔案名
+```
 例如：
-- 配置地址: `https://raw.githubusercontent.com/shijianus/moontv-source/main/config.json`
+```
+https://cdn.jsdelivr.net/gh/shijianus/moontv-source@main/config-anime.json
+```
 
-### 2. 在 MoonTV 中配置
-1. 打開 MoonTV (或 LunaTV) 客戶端/網頁端。
-2. 進入 **設置 (Settings)** > **配置源 (Source)**。
-3. 在「配置地址」欄位中填入上述獲取的 `config.json` 鏈接。
-4. 點擊「確認」或「更新」，等待數據加載完成。
-
-### 3. Docker 部署掛載 (可選)
-如果您是自建服務端，也可以直接將此倉庫的文件掛載到容器中：
-
+### 4. Docker 掛載範例（可選）
 ```bash
 docker run -d \
   --name moontv \
-  -v $(pwd)/moontv-source/config.json:/app/config.json \
+  -v $(pwd)/moontv-source:/app/config \
   -p 3000:3000 \
   ghcr.io/senshinya/moontv:latest
-
 ```
 
-## 🛠️ 維護與更新
+## 🛠️ 維護說明
 
-* **更新源**：直接修改本倉庫中的 `.json` 或 `.m3u` 文件並提交 (Push)。
-* **緩存刷新**：客戶端通常有緩存，更新文件後，用戶可能需要重啟應用或手動點擊「更新配置」才能看到最新內容。
-* **國內加速**：如果 GitHub Raw 鏈接在部分地區訪問困難，可以使用 CDN 加速服務（如 `jsDelivr`）：
-* 原鏈接：`https://raw.githubusercontent.com/...`
-* 加速鏈接：`https://cdn.jsdelivr.net/gh/shijianus/moontv-source@main/config.json`
+- 所有配置均為**公開免費源**，定期更新與清理失效接口。
+- 成人內容已完全獨立至 `config-adults.json`，與其他檔案分離。
+- 更新後請手動在客戶端點擊「更新配置」或重啟應用以刷新緩存。
+- 歡迎提交 Issue 回報失效源或建議新增資源。
 
+## ⚠️ 免責聲明
 
-
-## ⚠️ 免責聲明 (Disclaimer)
-
-1. 本倉庫僅用於學習和技術交流，**不存儲任何視頻文件**。
-2. 所有配置數據均收集自互聯網，其內容版權歸原作者或原平台所有。
-3. 請勿將本項目用於任何商業用途，使用本項目產生的任何後果由使用者自行承擔。
-4. 如果任何內容侵犯了您的權益，請提交 Issue 聯繫刪除。
+1. 本倉庫僅供學習與技術交流使用，**不存儲任何視頻內容**。
+2. 所有接口數據均來自互聯網公開資源，版權歸原權利人所有。
+3. 請遵守當地法律法規，勿用於商業用途。
+4. 使用本配置產生的任何後果由使用者自行承擔。
+5. 如有侵權內容，請提交 Issue，我們會盡快處理。
 
 ---
 
-*Created by [shijianus*](https://github.com/shijianus)
+**維護者**：[shijianus](https://github.com/shijianus)  
+最後更新：2026-07-20
