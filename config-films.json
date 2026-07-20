@@ -398,5 +398,103 @@
       "type": "tv",
       "query": "纪录片"
     }
+  ],
+  "lives": [
+    {
+      "name": "IPTV-Org 全球免费源",
+      "url": "https://iptv-org.github.io/iptv/index.m3u"
+    },
+    {
+      "name": "IPTV-Org 中国",
+      "url": "https://iptv-org.github.io/iptv/countries/cn.m3u"
+    },
+    {
+      "name": "IPTV-Org 香港",
+      "url": "https://iptv-org.github.io/iptv/countries/hk.m3u"
+    },
+    {
+      "name": "IPTV-Org 台湾",
+      "url": "https://iptv-org.github.io/iptv/countries/tw.m3u"
+    },
+    {
+      "name": "IPTV-Org 日本",
+      "url": "https://iptv-org.github.io/iptv/countries/jp.m3u"
+    },
+    {
+      "name": "IPTV-Org 韩国",
+      "url": "https://iptv-org.github.io/iptv/countries/kr.m3u"
+    },
+    {
+      "name": "IPTV-Org 美国",
+      "url": "https://iptv-org.github.io/iptv/countries/us.m3u"
+    },
+    {
+      "name": "IPTV-Org 英国",
+      "url": "https://iptv-org.github.io/iptv/countries/uk.m3u"
+    },
+    {
+      "name": "fanmingming 直播源",
+      "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u"
+    },
+    {
+      "name": "YueChan 直播源",
+      "url": "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u"
+    },
+    {
+      "name": "vbskycn 直播源",
+      "url": "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u"
+    },
+    {
+      "name": "Guovin 更新源",
+      "url": "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u"
+    },
+    {
+      "name": "kimwang1978 源",
+      "url": "https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.m3u"
+    },
+    {
+      "name": "Ftindy 源",
+      "url": "https://raw.githubusercontent.com/Ftindy/IPTV-URL/main/ipv6.m3u"
+    },
+    {
+      "name": "YanG-1989 源",
+      "url": "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u"
+    },
+    {
+      "name": "joevess 源",
+      "url": "https://raw.githubusercontent.com/joevess/IPTV/main/home.m3u"
+    },
+    {
+      "name": "suxuang 源",
+      "url": "https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u"
+    },
+    {
+      "name": "Kimentanm 源",
+      "url": "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u"
+    },
+    {
+      "name": "Free-TV 源",
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8"
+    },
+    {
+      "name": "iptv-org 分类体育",
+      "url": "https://iptv-org.github.io/iptv/categories/sports.m3u"
+    },
+    {
+      "name": "iptv-org 分类新闻",
+      "url": "https://iptv-org.github.io/iptv/categories/news.m3u"
+    },
+    {
+      "name": "iptv-org 分类电影",
+      "url": "https://iptv-org.github.io/iptv/categories/movies.m3u"
+    },
+    {
+      "name": "iptv-org 分类音乐",
+      "url": "https://iptv-org.github.io/iptv/categories/music.m3u"
+    },
+    {
+      "name": "iptv-org 分类纪录片",
+      "url": "https://iptv-org.github.io/iptv/categories/documentary.m3u"
+    }
   ]
 }
